@@ -14,7 +14,7 @@ public class ReleaseClaimTest extends BaseClass{
 
 	LoginPage loginPage;
 	ReleaseClaim releaseClaim;
-	String testdata = "testdata";
+	String testdata = "initiateClaimData";
 	UtilsClass utility = new UtilsClass();
 
 	public ReleaseClaimTest() {
@@ -41,10 +41,10 @@ public class ReleaseClaimTest extends BaseClass{
 	}
 
 
-	@AfterMethod
-	public void tearDown() {
-		//		driver.close();
-		utility.closeAllTab();
-	}
+//	@AfterMethod
+//	public void tearDown() {
+//		//		driver.close();
+//		utility.closeAllTab();
+//	}
 }
 

@@ -5,16 +5,16 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.claimspro.base.BaseClass;
-import com.claimspro.pages.CreatePersonPage;
+import com.claimspro.pages.CustomerPage;
 import com.claimspro.pages.LoginPage;
 
-public class CreatePersonTest extends BaseClass {
+public class CreateCustomerTest extends BaseClass {
 
 	
 	LoginPage loginPage;
-	CreatePersonPage createPersonPage;
+	CustomerPage createPersonPage;
 	
-	public CreatePersonTest() {
+	public CreateCustomerTest() {
 		super();
 	}
 	
@@ -22,7 +22,7 @@ public class CreatePersonTest extends BaseClass {
 	public void setUp() {
 		initialization();
 		loginPage = new LoginPage();
-		createPersonPage = new CreatePersonPage();
+		createPersonPage = new CustomerPage();
 	}
 	
 	@Test
@@ -32,8 +32,8 @@ public class CreatePersonTest extends BaseClass {
 	}
 	
 	
-	@AfterMethod
-	public void tearDown() {
-		driver.close();
-	}
+//	@AfterMethod
+//	public void tearDown() {
+//		driver.close();
+//	}
 }

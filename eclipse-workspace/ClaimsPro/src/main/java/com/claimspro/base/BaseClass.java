@@ -15,6 +15,7 @@ public class BaseClass {
 	public static Properties prop;
 
 	public BaseClass() {
+		System.out.println("Base class constructor");
 		try {
 			prop = new Properties();
 			FileInputStream fis = new FileInputStream("C:\\Users\\Himanshu.Dubey\\eclipse-workspace\\ClaimPro\\src\\main\\java\\com\\claimspro\\config\\config.properties");
@@ -39,6 +40,7 @@ public class BaseClass {
 			driver.manage().window().maximize();
 			driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			System.out.println(prop.getProperty("url"));
 			driver.get(prop.getProperty("url"));
 		}
 	}

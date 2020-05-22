@@ -22,7 +22,7 @@ public class LoginTest extends BaseClass {
 	}
 	
 	@Test
-	public void loginTest() {
+	public void loginTest() throws InterruptedException {
 		loginPage.login();
 	}
 	
