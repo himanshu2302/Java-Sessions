@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ClaimsPro]">
+  <test thread-count="5" name="ClaimsProApplication(failed)">
+    <classes>
+      <class name="com.newclaimspro.testcases.CreatePAClaimTest">
+        <methods>
+          <include name="createPAClaim" invocation-numbers="0 1"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.newclaimspro.testcases.CreatePAClaimTest -->
+    </classes>
+  </test> <!-- ClaimsProApplication(failed) -->
+</suite> <!-- Failed suite [ClaimsPro] -->
